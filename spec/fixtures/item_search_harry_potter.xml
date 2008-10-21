@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2005-10-05">
+	<OperationRequest>
+		<HTTPHeaders>
+<Header Name="UserAgent"></Header>
+		</HTTPHeaders>
+		<RequestId>1PQG5B2J3D7RHHWD2S70</RequestId>
+		<Arguments>
+<Argument Name="SearchIndex" Value="Books"></Argument>
+<Argument Name="Service" Value="AWSECommerceService"></Argument>
+<Argument Name="Title" Value="Harry Potter"></Argument>
+<Argument Name="Operation" Value="ItemSearch"></Argument>
+<Argument Name="AWSAccessKeyId" Value="dontbeaswoosh"></Argument>
+		</Arguments>
+		<RequestProcessingTime>0.0665218830108643</RequestProcessingTime>
+	</OperationRequest>
+	<Items>
+		<Request>
+<IsValid>True</IsValid>
+<ItemSearchRequest>
+	<SearchIndex>Books</SearchIndex>
+	<Title>Harry Potter</Title>
+</ItemSearchRequest>
+		</Request>
+		<TotalResults>1611</TotalResults>
+		<TotalPages>162</TotalPages>
+		<Item>
+<ASIN>0545010225</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0545010225%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Deathly-Hallows-Book/dp/0545010225%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J. K. Rowling</Author>
+	<Creator Role="Illustrator">Mary GrandPr\303\251</Creator>
+	<Manufacturer>Arthur A. Levine Books</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter and the Deathly Hallows (Book 7)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0439887453</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0439887453%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Paperback-Box-Books/dp/0439887453%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J.K. Rowling</Author>
+	<Creator Role="Illustrator">Mary GrandPr\303\251</Creator>
+	<Manufacturer>Scholastic Inc.</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter Paperback Box Set (Books 1-6)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0439785960</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0439785960%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Half-Blood-Prince-Book/dp/0439785960%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J.K. Rowling</Author>
+	<Creator Role="Illustrator">Mary GrandPr\303\251</Creator>
+	<Manufacturer>Scholastic Paperbacks</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter and the Half-Blood Prince (Book 6)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0590353403</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0590353403%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Sorcerers-Stone-Book/dp/0590353403%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J.K. Rowling</Author>
+	<Creator Role="Illustrator">Mary GrandPr\303\251</Creator>
+	<Manufacturer>Scholastic Press</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter and the Sorcerer's Stone (Book 1)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0545044251</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0545044251%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Boxset-Books-1-7/dp/0545044251%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J. K. Rowling</Author>
+	<Manufacturer>Arthur A. Levine Books</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter Boxset Books 1-7</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0439136350</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0439136350%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Prisoner-Azkaban-Book/dp/0439136350%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J.K. Rowling</Author>
+	<Creator Role="Illustrator">Mary GrandPr\303\251</Creator>
+	<Manufacturer>Scholastic</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter and the Prisoner of Azkaban (Book 3)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0439358078</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0439358078%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Order-Phoenix-Book/dp/0439358078%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J. K. Rowling</Author>
+	<Author>Mary GrandPr\303\251</Author>
+	<Manufacturer>Scholastic Paperbacks</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter and the Order of the Phoenix (Book 5)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0439064864</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0439064864%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Chamber-Secrets-Book/dp/0439064864%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J.K. Rowling</Author>
+	<Creator Role="Illustrator">Mary GrandPr\303\251</Creator>
+	<Manufacturer>Arthur A. Levine Books</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter and the Chamber of Secrets (Book 2)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>0439139597</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=0439139597%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Goblet-Fire-Book/dp/0439139597%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J.K. Rowling</Author>
+	<Creator Role="Illustrator">Mary GrandPr\303\251</Creator>
+	<Manufacturer>Scholastic Press</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter and the Goblet of Fire (Book 4)</Title>
+</ItemAttributes>
+		</Item>
+		<Item>
+<ASIN>043932162X</ASIN>
+<DetailPageURL>http://www.amazon.com/gp/redirect.html%3FASIN=043932162X%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/Harry-Potter-Schoolbooks-Box-Set/dp/043932162X%253FSubscriptionId=13BGQE8Q6AKCRYPHG0G2</DetailPageURL>
+<ItemAttributes>
+	<Author>J.K. Rowling</Author>
+	<Manufacturer>Arthur A. Levine Books</Manufacturer>
+	<ProductGroup>Book</ProductGroup>
+	<Title>Harry Potter Schoolbooks Box Set: From the Library of Hogwarts: Fantastic Beasts and Where To Find Them, Quidditch Through The Ages</Title>
+</ItemAttributes>
+		</Item>
+	</Items>
+</ItemSearchResponse>
