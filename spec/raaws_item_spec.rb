@@ -59,13 +59,13 @@ describe RAAWS::ItemOperation do
 
   private
   def book_look_up(author="Nabokov")
-    @book_look_up ||= RAAWS::ItemOperation.look_up "12A34565567878978", :book_index do |book|
+    @book_look_up ||= RAAWS::ItemOperation.look_up "12A34565567878978", :books_index do |book|
       book.author = author
     end
   end
   
   def book_search(title="Ada", author="Nabokov")
-    @book_search = RAAWS::ItemOperation.search :book_index do |book|
+    @book_search = RAAWS::ItemOperation.search :books_index do |book|
       book.title = title
       book.author = author
     end

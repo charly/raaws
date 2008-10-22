@@ -10,7 +10,7 @@ module RAAWS
     end
     
     def items(reload= false)
-      @items ||= (@hpricot/'Item').inject([]) do |collection, item| 
+      @items ||= (@hpricot/'Item').inject([]) do |collection, item|
         collection << new_from_element(item)
       end
     end
@@ -25,7 +25,7 @@ module RAAWS
         if child.respond_to?(:stag)
           attr = child.stag.name.underscore
           obj.send("#{attr}=", child.innerHTML) unless %w[asin url].include?(attr)
-        end        
+        end
       end
       return obj
     end 
