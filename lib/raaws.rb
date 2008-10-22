@@ -14,7 +14,7 @@ module RAAWS
   require "operation/operation"
   require "operation/item_operation"
   require "search_index/search_index"
-  require "search_index/book_index"
+  require "search_index/books_index"
   require "search_index/classical_index"
   require "search_index/d_v_d_index"
   require "search_index/music_index"
