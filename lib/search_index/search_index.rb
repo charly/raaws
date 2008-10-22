@@ -9,12 +9,19 @@ module RAAWS
     SilverMerchants Software SportingGoods Tools Toys UnboxVideo
     VHS Video VideoGames Watches Wireless WirelessAccessories>
     
-  class SearchIndex
-    def instance_variables_to_hash
-      returning Hash.new do |params|
-        instance_variables.map { |i| params[i.gsub(/^@/, '').to_sym] = instance_variable_get(i)  }
-      end
+  class SearchIndex < OpenStruct
+    alias :to_params :marshal_dump
+    
+    def initialize
+      super
+      self.search_index = self.class.to_s.split("::").last.gsub(/Index/, '')
     end
-    alias :to_params :instance_variables_to_hash
+    
+    # def instance_variables_to_hash
+    #   returning Hash.new do |params|
+    #     instance_variables.map { |i| params[i.gsub(/^@/, '').to_sym] = instance_variable_get(i)  }
+    #   end
+    # end
+    # alias :to_params :instance_variables_to_hash
   end
 end
