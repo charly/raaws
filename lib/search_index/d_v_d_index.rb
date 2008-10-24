@@ -5,8 +5,6 @@ module RAAWS
       Count Director Format ItemPage Keywords 
       Magazines Performer PostalCode Publisher 
       Sort State Title>
-      
-      attr_accessor :author, :director, :publisher, :title
-      
+            
   end
 end  

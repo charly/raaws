@@ -8,11 +8,7 @@ module RAAWS
         :service => "AWSECommerceService",
         :a_w_s_access_key_id => "1GGP2X6SNBRNARDHET82",
         :associate_tag => "charliechap0e-20",
-        :operation => "ItemSearch",
         :version => "2008-10-07",
-        :item_page => "1",
-        :search_index => "DVD",
-        :response_group => "Small",
       }
 		end
 		

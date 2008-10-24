@@ -12,7 +12,7 @@ module RAAWS
   class SearchIndex < OpenStruct
     alias :to_params :marshal_dump
     
-    def initialize
+    def initialize(arg)
       super
       self.search_index = self.class.to_s.split("::").last.gsub(/Index/, '')
     end
