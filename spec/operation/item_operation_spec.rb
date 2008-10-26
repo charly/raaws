@@ -5,7 +5,7 @@ describe RAAWS::ItemOperation do
     @xml = open(File.dirname(__FILE__) + '/fixtures/item_search_harry_potter.xml').read
   end
   
-  describe "Search Index Instance" do
+  describe "SearchIndex Instance" do
     it "should hold an instance of a **SearchIndex** subclass" do
       arg = book_search.search_index
       arg.class.superclass.should be(RAAWS::SearchIndex)
