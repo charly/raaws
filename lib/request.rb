@@ -2,9 +2,10 @@ module RAAWS
   class Request
     attr_reader :params
     
-		def initialize
+		def initialize(params={})
 			@base_url = "http://ecs.amazonaws.com"
-			@params = {
+			@params = params
+			self.params = {
         :service => "AWSECommerceService",
         :a_w_s_access_key_id => "1GGP2X6SNBRNARDHET82",
         :associate_tag => "charliechap0e-20",

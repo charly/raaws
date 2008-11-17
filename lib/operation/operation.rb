@@ -9,7 +9,7 @@ module RAAWS
 
   
   class Operation
-    attr_accessor :operation, :search_index, :request, :response, :page
+    attr_reader :operation, :search_index, :request, :response, :page
     attr_writer :xml, :hpricot, :result
     
     def operation=(type)
@@ -42,7 +42,7 @@ module RAAWS
       end
     end
     
-    def xml
+    def xml #=(xml)
       raise "request needs to be initialized/set first" unless @request
       @xml ||= self.request.send.read
     end
@@ -56,16 +56,9 @@ module RAAWS
       @result ||= hpricot && self.response.items
     end
     
-    # TODO : get number of pages & total result as well
-    def page(num)
-      @page = reset && @request.params = num.to_s
-    end
-    
     private
     def reset
       @xml, @hpricot, @result = nil, nil, nil
     end
-      
-
   end
 end

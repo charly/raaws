@@ -2,6 +2,8 @@ $:.unshift File.join(File.dirname(__FILE__),'lib')
 require "rubygems"
 require 'ostruct'
 require "hpricot"
+require "xml/libxml"
+require "libxml_hpricot"
 require "open-uri"
 require "uri"
 require "fileutils"

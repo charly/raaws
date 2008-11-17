@@ -15,7 +15,7 @@ module RAAWS
           obj.request = obj.search_index.to_params
         end
         obj.request = {:item_id => item_id}
-        obj.response = "Medium"
+        obj.response = "Large"
       end    
     end
     

@@ -15,6 +15,7 @@ module RAAWS
       end
     end
     
+    # NOTE : copied from AAWS
     def new_from_element(element)
       obj = OpenStruct.new
       obj.asin = element.at('ASIN').innerHTML
