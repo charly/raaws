@@ -6,7 +6,7 @@ module RAAWS
     attr_accessor :group, :xml, :hpricot
         
     def hpricot=(xml)
-      @hpricot = Hpricot::XML(xml)
+      @hpricot= Nokogiri::XML(xml)
     end
     
     def items(reload= false)
@@ -17,20 +17,12 @@ module RAAWS
     
     # NOTE : copied from AAWS
     def new_from_element(element)
-      obj = OpenStruct.new
-      obj.asin = element.at('ASIN').innerHTML
-      obj.url = element.at('DetailPageURL').innerHTML
-      
-      # auto create methods for each of the item attributes
-      element.at('ItemAttributes').children.each do |child|
-        if child.respond_to?(:stag)
-          attr = child.stag.name.underscore
-          obj.send("#{attr}=", child.innerHTML) unless %w[asin url].include?(attr)
-        end
+      returning OpenStruct.new do |obj|
+        obj.asin = element.at('ASIN').inner_text
+        obj.url = element.at('DetailPageURL').inner_text
+        obj.title = element.at("Title").inner_text
       end
-      return obj
-    end 
-    
+    end
   end
 end
 

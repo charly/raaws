@@ -8,3 +8,4 @@ end
 
 $:.unshift File.join(File.dirname(__FILE__), '/../', "lib")
 require 'raaws'
+require "fakeweb"

@@ -1,19 +1,21 @@
 $:.unshift File.join(File.dirname(__FILE__),'lib')
 require "rubygems"
 require 'ostruct'
-require "hpricot"
-require "xml/libxml"
-require "libxml_hpricot"
-require "open-uri"
+#require "hpricot"
+#require "xml/libxml"
+require "nokogiri"
+#require "libxml_hpricot"
+#require "open-uri"
+require "net/http"
 require "uri"
 require "fileutils"
-require "active_support"
+require "activesupport"
 
 
 module RAAWS
   require "request"
   require "response"
-  require "operation/operation"
+  require "operation"
   require "operation/item_operation"
   require "search_index/search_index"
   require "search_index/books_index"

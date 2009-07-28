@@ -5,7 +5,7 @@ module RAAWS
     Keywords Manufacturer MusicLabel Neighborhood
     Orchestra Power Publisher TextStream Title>
     
-  class ItemOperation < Operation   
+  class ItemOperation < Operation
     def self.lookup(item_id, index=nil, &block)
       returning new do |obj|
         obj.operation = "Lookup"
@@ -31,5 +31,10 @@ module RAAWS
       end
     end
     
+    def page(num=1)
+      reset
+      @request.params={:item_page => num.to_s}
+      return self
+    end
   end  
 end

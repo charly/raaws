@@ -3,7 +3,7 @@ module RAAWS
     attr_reader :params
     
 		def initialize(params={})
-			@base_url = "http://ecs.amazonaws.com"
+			@base_url = "http://ecs.amazonaws.fr"
 			@params = params
 			self.params = {
         :service => "AWSECommerceService",
@@ -25,14 +25,14 @@ module RAAWS
     
     def uri
       @uri = URI.join(@base_url, "/onca/xml")
-      @uri.query = camelize_hash_keys(@params).
+      @uri.query = camelize_hash_keys(@params).sort.
         map { |k,v| "%s=%s" % [URI.encode(k), URI.encode(v)] }.
         join("&") 
       @uri
     end
     
-    def send
-      open(self.uri)
+    def get
+      Net::HTTP.get uri
     end	  
 	end
 end

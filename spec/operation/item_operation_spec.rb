@@ -24,6 +24,10 @@ describe RAAWS::ItemOperation do
     it "should do the same with Hash instead of Block" do
     
     end
+    
+    it "should PAGINATE" do
+      book_search.page(2).request.params[:item_page].should == "2"
+    end
   end
   
   describe "Lookup Operation" do
@@ -35,8 +39,8 @@ describe RAAWS::ItemOperation do
       book_lookup.request.uri.query.should match(/Operation=ItemLookup/)
     end
     
-    it "should have a ResponseGroup set to Medium by default" do
-      book_lookup.request.uri.query.should match(/ResponseGroup=Medium/)
+    it "should have a ResponseGroup set to Large by default" do
+      book_lookup.request.uri.query.should match(/ResponseGroup=Large/)
     end
   end
   
