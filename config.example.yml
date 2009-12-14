@@ -1,0 +1,9 @@
+fr:
+  :domain: "webservices.amazon.fr"
+  :associate_tag: "charlieschapl-21"
+  :secret_key: 'mysecretkeyprovidedbyamazon'
+  
+us:
+  :domain: "webservices.amazon.com"
+  :associate_tag: "charliechap0e-20"
+  :secret_key: 'mysecretkeyprovidedbyamazon'
