@@ -3,11 +3,16 @@ module RAAWS
   class SearchResults < OpenStruct; end
   
   class Response
-    attr_accessor :group, :xml, :hpricot
+    attr_accessor :group, :xml, :hpricot, :nokogiri
         
     def hpricot=(xml)
       @hpricot= Nokogiri::XML(xml)
     end
+
+    def nokogiri=(xml)
+      @hpricot= Nokogiri::XML(xml)
+    end
+
     
     def items(reload= false)
       @items ||= (@hpricot/'Item').inject([]) do |collection, item|
