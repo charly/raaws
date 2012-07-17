@@ -4,8 +4,8 @@ require File.expand_path('../lib/raaws/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["charlysisto"]
   gem.email         = ["charlysisto@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Amazon API for Product Advertising}
+  gem.summary       = %q{(don't) Use it (yet) with rails to build your amazon shop.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
