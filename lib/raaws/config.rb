@@ -5,7 +5,7 @@ module RAAWS
     
     def data=(lang)
       @country = lang
-      @data = YAML.load_file( File.dirname(__FILE__) + "/../config.yml" )[lang]
+      @data = YAML.load_file(File.join Rails.root, "config", "raaws.yml")[lang]
     end
   end
 end
