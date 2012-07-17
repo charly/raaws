@@ -7,7 +7,7 @@ module RAAWS
     
   class ItemOperation < Operation
     def self.lookup(item_id, index=nil, &block)
-      returning new do |obj|
+      new.tap do |obj|
         obj.operation = "Lookup"
         obj.search_index = index if index
         if block_given?
@@ -20,7 +20,7 @@ module RAAWS
     end
     
     def self.search(index, opt={}, &block)
-      returning new do |obj|
+      new.tap do |obj|
         obj.operation = "Search"
         obj.search_index = index 
         if block_given?

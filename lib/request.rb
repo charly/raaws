@@ -35,14 +35,14 @@ module RAAWS
   	  
   	  # from {:access_key => "blabla"} to {"AccessKey" => "blabla"}
   	  def camelize_params(params)
-  	    returning Hash.new do |a|
+  	    Hash.new.tap do |a|
     	    params.map { |k,v| a[k.to_s.camelize] = v }
   	    end
       end
   	   	  
   	  # from {:title => "Modern Times"} to {:title=>"Modern%20Times"}
  	    def encode_params(params)
-	      returning Hash.new do |a|
+	      Hash.new.tap do |a|
   	      params.map { |k, v| a[k] = url_encode(v)  }	       
 	      end
       end

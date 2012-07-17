@@ -18,7 +18,7 @@ module RAAWS
     end
     
     # def instance_variables_to_hash
-    #   returning Hash.new do |params|
+    #   Hash.new.tap do |params|
     #     instance_variables.map { |i| params[i.gsub(/^@/, '').to_sym] = instance_variable_get(i)  }
     #   end
     # end

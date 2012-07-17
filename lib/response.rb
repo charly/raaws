@@ -22,7 +22,7 @@ module RAAWS
     
     # NOTE : copied from AAWS
     def new_from_element(element)
-      returning OpenStruct.new do |obj|
+      OpenStruct.new.tap do |obj|
         obj.asin = element.at('ASIN').inner_text
         obj.url = element.at('DetailPageURL').inner_text
         obj.title = element.at("Title").inner_text

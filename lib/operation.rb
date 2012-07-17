@@ -36,7 +36,7 @@ module RAAWS
     # Given a Hash of Params collected in Operation SearchIndex
     # it creates an *instance of RAAWS::Request* which constructs the url.
     def request=(params)
-      @request = returning Request.new do |req|
+      @request = Request.new.tap do |req|
         req.params = params.merge(operation)
       end
     end
@@ -47,7 +47,7 @@ module RAAWS
     def response=(group)
       raise "request needs to be initialized/set first" unless @request
       @request.params = { :response_group => group }
-      @response = returning Response.new do |resp|
+      @response = Response.new.tap do |resp|
         resp.group = group
       end
     end
