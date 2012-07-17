@@ -1,23 +1,25 @@
 $:.unshift File.join(File.dirname(__FILE__),'lib')
-require "rubygems"
-require "singleton"
-require 'ostruct'
-#require "hpricot"
-#require "xml/libxml"
-require "nokogiri"
-#require "libxml_hpricot"
-require "open-uri"
-require "net/http"
-require "uri"
-require "fileutils"
-require "activesupport"
-require 'cgi'
-require 'time'
-require 'hmac'
-require 'hmac-sha2'
-require 'base64'
 
 module RAAWS
+  #EXTERNAL
+  require "singleton"
+  require 'ostruct'
+  #require "hpricot"
+  #require "xml/libxml"
+  require "nokogiri"
+  #require "libxml_hpricot"
+  require "open-uri"
+  require "net/http"
+  require "uri"
+  require "fileutils"
+  require "active_support"
+  require 'cgi'
+  require 'time'
+  require 'hmac'
+  require 'hmac-sha2'
+  require 'base64'
+
+  # INTERNAL
   require "config"
   require "request"
   require "response"
