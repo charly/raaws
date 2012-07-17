@@ -1,35 +1,36 @@
-$:.unshift File.join(File.dirname(__FILE__),'lib')
+
+# STANDARD
+require "singleton"
+require 'ostruct'
+require "open-uri"
+require "net/http"
+require "uri"
+require "fileutils"
+require 'cgi'
+require 'time'
+require 'hmac'
+require 'hmac-sha2'
+require 'base64'
+
+#EXTERNAL
+require "active_support"
+require "nokogiri"
+
+
+# INTERNAL
+require "raaws/config"
+require "raaws/request"
+require "raaws/response"
+require "raaws/operation"
+require "raaws/operation/item_operation"
+require "raaws/search_index/search_index"
+require "raaws/search_index/books_index"
+require "raaws/search_index/classical_index"
+require "raaws/search_index/d_v_d_index"
+require "raaws/search_index/music_index"
+
 
 module RAAWS
-  #EXTERNAL
-  require "singleton"
-  require 'ostruct'
-  #require "hpricot"
-  #require "xml/libxml"
-  require "nokogiri"
-  #require "libxml_hpricot"
-  require "open-uri"
-  require "net/http"
-  require "uri"
-  require "fileutils"
-  require "active_support"
-  require 'cgi'
-  require 'time'
-  require 'hmac'
-  require 'hmac-sha2'
-  require 'base64'
-
-  # INTERNAL
-  require "config"
-  require "request"
-  require "response"
-  require "operation"
-  require "operation/item_operation"
-  require "search_index/search_index"
-  require "search_index/books_index"
-  require "search_index/classical_index"
-  require "search_index/d_v_d_index"
-  require "search_index/music_index"
   DEFAULT_PARAMS = {
     :service => "AWSECommerceService",
     :a_w_s_access_key => "charliechap0e-20",
