@@ -13,7 +13,7 @@ require 'hmac-sha2'
 require 'base64'
 
 #EXTERNAL
-require "active_support"
+require "active_support/core_ext"
 require "nokogiri"
 
 
