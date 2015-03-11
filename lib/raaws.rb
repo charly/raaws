@@ -31,25 +31,26 @@ require "raaws/search_index/music_index"
 
 
 module RAAWS
+  API_VERSION = "2011-08-01"
   DEFAULT_PARAMS = {
     :service => "AWSECommerceService",
     :a_w_s_access_key => "charliechap0e-20",
     :associate_tag => "1GGP2X6SNBRNARDHET82",
     :operation => "ItemSearch",
-    :version => "2008-10-07",
+    :version => API_VERSION,
     :item_page => "1",
     :search_index => "DVD",
     :response_group => "Small",
     :author => "Charlie Chaplin"
-  }   
-   
+  }
+
   # TODO : complete list
-  RESPONSE_GROUP = %w<  
+  RESPONSE_GROUP = %w<
     Accessories AlternateVersions BrowseNodeInfo BrowseNodes
     Cart CartNewReleases CartToSellers CartSimilarites Collections
     CustomerFull CustomerInfo CustomerLists CustomerReviews
-    EditorialReview Fitments HasPartCompatibility Help 
-    Images ItemAttributes ItemIds 
+    EditorialReview Fitments HasPartCompatibility Help
+    Images ItemAttributes ItemIds
     Large ListFull
     Medium
     NewReleases

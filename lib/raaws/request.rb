@@ -14,7 +14,7 @@ module RAAWS
         :service => "AWSECommerceService",
         :associate_tag => @associate_tag,
         :a_w_s_access_key_id => @a_w_s_access_key_id,
-        :version => "2009-01-06"
+        :version => API_VERSION
       }
     end
 
